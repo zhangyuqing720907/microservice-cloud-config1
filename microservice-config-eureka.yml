@@ -12,9 +12,9 @@ eureka:
   instance:
     hostname: eureka6001.com
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
       defaultZone: http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: false
@@ -29,9 +29,9 @@ eureka:
   instance:
     hostname: eureka6001.com
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
       defaultZone: http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: true
