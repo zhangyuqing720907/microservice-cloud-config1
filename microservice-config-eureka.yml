@@ -8,7 +8,6 @@ spring:
   profiles: dev
   application:
     name: microservice-config-eureka
- 
 eureka:
   instance:
     hostname: eureka6001.com
