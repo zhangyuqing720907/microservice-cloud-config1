@@ -11,13 +11,13 @@ spring:
 eureka:
   instance:
     hostname: eureka6001.com
+  server:
+    enable-self-preservation: false    
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka6001.com:6001/eureka/
-  server:
-    enable-self-preservation: false
 ---
 server:
   port: 6001
@@ -28,10 +28,10 @@ spring:
 eureka:
   instance:
     hostname: eureka6001.com
+  server:
+    enable-self-preservation: true    
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka6001.com:6001/eureka/
-  server:
-    enable-self-preservation: true
