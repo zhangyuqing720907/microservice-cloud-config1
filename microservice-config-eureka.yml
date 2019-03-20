@@ -3,7 +3,7 @@ spring:
     active: dev
 ---
 server:
-  port: 6001 
+  port: 6001
 spring:
   profiles: dev
   application:
@@ -11,27 +11,28 @@ spring:
 eureka:
   instance:
     hostname: eureka6001.com
-  server:
-    enable-self-preservation: false    
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka6001.com:6001/eureka/
+  server:
+    enable-self-preservation: false
+
 ---
 server:
   port: 6001
 spring:
-  profiles: prod 
+  profiles: prod
   application:
     name: microservice-config-eureka
 eureka:
   instance:
     hostname: eureka6001.com
-  server:
-    enable-self-preservation: true    
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://eureka6001.com:6001/eureka/
+  server:
+    enable-self-preservation: true
