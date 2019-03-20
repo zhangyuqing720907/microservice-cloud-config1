@@ -18,7 +18,6 @@ eureka:
       defaultZone: http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: false
-
 ---
 server:
   port: 6001
