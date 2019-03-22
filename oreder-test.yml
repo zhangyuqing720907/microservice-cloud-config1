@@ -6,10 +6,8 @@ spring:
     password: 123456
     url: jdbc:mysql://192.168.199.129:3306/SpringCloud_Sell?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.cj.jdbc.Driver
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-env:
-  test4
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
