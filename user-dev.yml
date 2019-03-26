@@ -1,4 +1,6 @@
-spring:
+springspring:
+  application:
+    name: user
   datasource:
     username: root
     password: 123456
